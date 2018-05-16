@@ -31,4 +31,11 @@ body{font:12px/1em "微软雅黑"; color:#000;}
     margin-top: 30px;
 }
 
+.color{
+    transition: all 0.4s;
+}
+.color:hover{
+    color: #ff6600;
+}
+
 
