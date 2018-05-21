@@ -1,0 +1,69 @@
+.login_top {
+  height: 117px; }
+  .login_top h1 {
+    float: left;
+    margin-top: 20px; }
+  .login_top .right_cont {
+    float: right; }
+    .login_top .right_cont > p {
+      color: #6c6c6c;
+      width: 765px;
+      background: #fef2f2;
+      border: 1px #ffb4a8 solid;
+      line-height: 14px;
+      padding: 6px 15px;
+      margin-top: 30px; }
+    .login_top .right_cont > ul {
+      float: right;
+      margin-top: 20px; }
+      .login_top .right_cont > ul li {
+        float: left; }
+
+.login_main {
+  width: 100%;
+  height: 524px;
+  background: url("../images/201705031858210830908.jpg") no-repeat center center;
+  background-size: 1920px 620px; }
+  .login_main .content {
+    width: 313px;
+    border: 1px red solid;
+    float: right;
+    margin-right: 50px; }
+    .login_main .content .out {
+      margin-top: 40px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 23px; }
+    .login_main .content .form_box {
+      width: 313px;
+      height: 355px;
+      background: #fff;
+      padding: 22px 30px; }
+    .login_main .content .title {
+      font-size: 20px;
+      line-height: 20px;
+      color: #666666; }
+    .login_main .content input {
+      width: 100%;
+      height: 40px;
+      border: 1px #e6e6e6 solid;
+      margin-top: 13px;
+      padding: 0 9px; }
+    .login_main .content .forget {
+      height: 12px;
+      color: #999999;
+      margin-top: 18px;
+      margin-bottom: 16px; }
+      .login_main .content .forget a {
+        float: right; }
+    .login_main .content button {
+      width: 100%;
+      height: 40px;
+      border: 0;
+      background: #e91206;
+      color: #fff;
+      font-size: 13px;
+      border-radius: 4px; }

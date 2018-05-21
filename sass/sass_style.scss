@@ -1,0 +1,85 @@
+@import "./_common/color.scss";
+.login_top{
+    height: 117px;
+    h1{
+        float: left;
+        margin-top: $mt-20;
+    }
+    .right_cont{
+        float: right;
+        >p{
+            color: $color_6c;
+            width: 765px;
+            background: $bg_f2;
+            border: $bor_fb4;
+            line-height: nth($fontSize,2);
+            padding: 6px 15px;
+            margin-top: 30px;
+        }
+        >ul{
+            float: right;
+            margin-top: $mt-20;
+            li{
+                float: left;
+            }
+        }
+    }
+}
+//登录的主体的样式
+.login_main{
+    width: 100%;
+    height: 524px;
+    background: url("../images/201705031858210830908.jpg") no-repeat center center;
+    background-size: 1920px 620px;
+    .content{
+        width: 313px;
+        border: 1px red solid;
+        float: right;
+        margin-right: 50px;
+        .out{
+            margin-top: 40px;
+            font-size: nth($fontSize,5);
+            line-height: nth($fontSize,5);
+            font-weight: bold;
+            color: $color_ff;
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        .form_box{
+            width: 313px;
+            height: 355px;
+            background: #fff;
+            padding: 22px 30px;
+        }
+        .title{
+            font-size: nth($fontSize,5);
+            line-height: nth($fontSize,5);
+            color: $color_66;
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            border: 1px #e6e6e6 solid;
+            margin-top: 13px;
+            padding: 0 9px;
+        }
+        .forget{
+            height: 12px;
+            color: #999999;
+            margin-top: 18px;
+            margin-bottom: 16px;
+            a{
+                float: right;
+            }
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            border: 0;
+            background: #e91206;
+            color: #fff;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    }
+}

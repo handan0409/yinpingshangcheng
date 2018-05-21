@@ -1,0 +1,29 @@
+/*插件开发人员 编写的css*/
+.hd-banner-item.hd-active{
+    z-index: 2;
+}
+.hd-banner-pagination{
+    width: 80%;
+    height:20px;
+    position: absolute;
+    z-index: 999;
+    bottom: 30px;
+    left:10%;
+    text-align: center;
+}
+
+.hd-banner-pagination span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: #f99;
+}
+.hd-banner-pagination span.hd-active{
+    background: red;
+}
+.hd-banner-pagination span:first-child{
+    margin-left: 0; 
+}
+
+
+

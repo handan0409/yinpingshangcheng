@@ -1,0 +1,41 @@
+body{overflow-x:hidden;}
+*{box-sizing: border-box}
+body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none; color:inherit;}
+a,input{outline:none;}
+body{font:12px/1em "微软雅黑"; color:#000;}
+.clear:after{content:"."; display:block; clear:both;height:0; visibility:hidden;}
+.clear{zoom:1;}
+.clamp1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.clamp2{
+    overflow: hidden;  /** 隐藏超出的内容 **/
+    display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+}
+
+.container{width: 1080px; margin: 0 auto;}
+.border0{border:none;}
+.bg{
+    background: #f10214;
+}
+.mt30{
+    margin-top: 30px;
+}
+
+.color{
+    transition: all 0.4s;
+}
+.color:hover{
+    color: #ff6600;
+}
+
+
