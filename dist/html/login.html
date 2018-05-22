@@ -31,22 +31,36 @@
                     <p class="out">一个账号，玩转所有的音平服务</p>
                     <div class="form_box">
                         <div class="title">密码登录</div>
-                        <form action="">
-                            <input type="text" placeholder="手机号/用户名/邮箱">
-                            <input type="password" placeholder="密码">
+                            <input id="user" type="text" placeholder="手机号/用户名/邮箱">
+                            <span class="error">用户名格式输入错误！请从新输入</span>
+                            <input id="pwd" type="password" placeholder="密码">
+                            <span class="error">密码格式输入错误！请重新输入</span>
+                            <span class="error error_zong">用户名或密码输入错误！请重新输入</span>
                             <p class="forget"><a>忘记密码？</a></p>
-                            <button type="submit">立即登录</button>
-                            <p>合作伙伴账号登录：
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
+                            <button id="sub" type="submit">立即登录</button>
+                            <p class="coop">合作伙伴账号登录：
+                                <a class="a1" href=""></a>
+                                <a class="a2" href=""></a>
+                                <a class="a3" href=""></a>
+                                <a class="a4" href=""></a>
                             </p>
-                        </form>
+                            <a class="zhuce" href="register.html">注册音平账号</a>
                     </div>
                 </div>
         </div>
-        
     </div>
+    <!-- 尾部版权信息 -->
+    <div class="login_footer">
+        <p><a href="">关于我们</a> | <a href="">联系我们</a></p>
+        <p>增值电信业务经营许可证：粤B2-20110237 | 粤ICP备11032710号-1</p>
+        <p>© 2011-2017 音平公司版权所有，并保留所有权利（著作权及商标声明）</p>
+    </div>
+
+    <script src="../js/require.js"></script>
+    <script>
+        require(["../js/require.config"],function(){
+            require(["../js/login"]);
+        });
+    </script>
 </body>
 </html>

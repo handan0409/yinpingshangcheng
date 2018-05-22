@@ -35,6 +35,9 @@
 .header_top .ul_left li a{
     color: #ff6600;
 }
+.header_top .ul_left .login_2{
+    display: none;
+}
 .header_top .ul_right{
     float: right;
 }

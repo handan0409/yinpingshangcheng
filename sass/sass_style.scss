@@ -33,7 +33,6 @@
     background-size: 1920px 620px;
     .content{
         width: 313px;
-        border: 1px red solid;
         float: right;
         margin-right: 50px;
         .out{
@@ -47,7 +46,7 @@
         }
         .form_box{
             width: 313px;
-            height: 355px;
+            // height: 355px;
             background: #fff;
             padding: 22px 30px;
         }
@@ -63,16 +62,30 @@
             margin-top: 13px;
             padding: 0 9px;
         }
+        .prompt{
+            padding-left: 5px;
+            line-height: 14px;
+            padding-top: 4px;
+            display: none;
+        }
+        .prompt.succ{
+            color: #dcdcdc;
+        }
+        .error{
+            color: #ff6f3d;
+            padding-left: 5px;
+            line-height: 14px;
+            padding-top: 4px;
+            display: none;
+        }
         .forget{
             height: 12px;
             color: #999999;
             margin-top: 18px;
             margin-bottom: 16px;
-            a{
-                float: right;
-            }
+            text-align: right;
         }
-        button{
+        button,.zhuce{
             width: 100%;
             height: 40px;
             border: 0;
@@ -81,5 +94,110 @@
             font-size: 13px;
             border-radius: 4px;
         }
+        .zhuce{
+            display: block;
+            line-height: 40px;
+            text-align: center;
+            background: #fff;
+            color: $color_6c;
+            border: 1px #e5e5e5 solid;
+        }
+        .coop{
+            text-align: right;
+            line-height: 24px;
+            margin: 15px 0;
+            color: $color_6c;
+        }
+        .coop a{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+        .coop .a1{
+            background: url(../images/s_gallery_20141218.png) no-repeat 0 0;
+        }
+        .coop .a2{
+            background: url(../images/s_gallery_20141218.png) no-repeat 0 -29px;
+        }
+        .coop .a3{
+            background: url(../images/s_gallery_20141218.png) no-repeat 0 -58px;
+        }
+        .coop .a4{
+            background: url(../images/s_gallery_20141218.png) no-repeat 0 -87px;
+        }
+        .coop .a5{
+            background: url(../images/s_gallery_20141218.png) no-repeat 0 -116px;
+        }
     }
+}
+//登录的版权信息板块
+.login_footer{
+    width: 100%;
+    height: 152px;
+    color: $color_90;
+    text-align: center;
+    padding-top: 14px;
+    p{
+        line-height: 23px;
+        a:hover{
+            color: #545454;
+            font-weight: bold;
+        }
+    }
+    p:first-child{
+        line-height: 32px;
+        margin-top: 5px;
+    }
+}
+// 注册的页面的sass
+.zhuce_top{
+    .right_cont{
+        >p{
+            opacity: 0;
+        }
+    }
+}
+.zhuce_main{
+    background: #0094e2;
+    .content{
+        margin: 0 auto;
+        float: none;
+        overflow: hidden;
+        .forget{
+            height: auto;
+            text-align: left;
+            input{
+                width: auto;
+                height: auto;
+                margin: 0;
+                vertical-align: middle;
+            }
+            a{
+                color: #333333;
+            }
+        }
+        .phone{
+            input{
+                float: left;
+            }
+            p{
+                float: left;
+            }
+            .phone_num{
+                width: 65%;
+            }
+            .btn_yan{
+                width: 35%;
+                color: $color_90;
+                background: #fff;
+                border-left: 0;
+            }
+        }
+        .zhuce{
+            margin-top: 15px;
+        }
+    }
+    
 }

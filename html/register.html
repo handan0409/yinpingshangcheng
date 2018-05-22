@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="../css/sass_style.css"/>
 </head>
 <body>
-    <div class="login_top">
+    <div class="login_top zhuce_top">
         <div class="container">
             <h1><a href=""><img src="../images/ingping-1.0.0.png" alt=""></a></h1>
             <div class="right_cont">
-                <p>为确保您的账号安全及正常使用，依《网络安全法》相关要求，会员账号需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+                <p></p>
                 <ul class="clear">
                     <li><a href=""><img src="../images/ingpingmall-1.0.0.png" alt=""><img src="../images/xiegang-1.0.0.png" alt=""></a></li>
                     <li><a href=""><img src="../images/ingpingzixun-1.0.0.png" alt=""><img src="../images/xiegang-1.0.0.png" alt=""></a></li>
@@ -25,26 +25,39 @@
         </div>
     </div>
     <!-- 注册登录页面 -->
-    <div class="login_main">
+    <div class="login_main zhuce_main">
         <div class="container">
                 <div class="content">
                     <p class="out">一个账号，玩转所有的音平服务</p>
                     <div class="form_box">
-                        <div class="title">密码登录</div>
-                            <input id="user" type="text" placeholder="手机号/用户名/邮箱">
-                            <span class="error">用户名格式输入错误！请从新输入</span>
-                            <input id="pwd" type="password" placeholder="密码">
-                            <span class="error">密码格式输入错误！请重新输入</span>
-                            <span class="error error_zong">用户名或密码输入错误！请重新输入</span>
-                            <p class="forget"><a>忘记密码？</a></p>
-                            <button id="sub" type="submit">立即登录</button>
-                            <p class="coop">合作伙伴账号登录：
-                                <a class="a1" href=""></a>
-                                <a class="a2" href=""></a>
-                                <a class="a3" href=""></a>
-                                <a class="a4" href=""></a>
+                        <div class="title">账号注册</div>
+                            <div class="phone">
+                                <input id="phone" class="phone_num" type="text" placeholder="请输入手机号">
+                                <input class="btn_yan" type="button" value="获取验证码">
+                                
+                                <p class="prompt error">手机号码输入有误！请重新输入</p>
+                            </div>
+
+                            <input class="input" type="text" placeholder="请输入短信验证码">
+
+                            <!-- <p class="prompt succ">请输入手机短信验证码</p>
+                            <p class="prompt error">手机验证码输入有误！请重新输入</p> -->
+
+                            <input id="pwd" class="input" type="password" placeholder="请设置6-20位登录密码">
+
+                            <!-- <p class="prompt succ">建议使用字母数字和符号两种以上的组合，6-20个字符</p> -->
+                            <p class="prompt error">密码格式输入错误！请重新输入</p>
+
+                            <span class=""></span>
+                            <p class="forget">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    我已阅读并同意
+                                </label>
+                                <a href="">《音平网服务协议》</a>
                             </p>
-                            <a class="zhuce" href="register.html">注册音平账号</a>
+                            <button id="sub" type="submit">立即注册</button>
+                            <a class="zhuce" href="login.html">已有账号，去登陆</a>
                     </div>
                 </div>
         </div>
@@ -59,7 +72,7 @@
     <script src="../js/require.js"></script>
     <script>
         require(["../js/require.config"],function(){
-            require(["../js/login"]);
+            require(["../js/register"]);
         });
     </script>
 </body>

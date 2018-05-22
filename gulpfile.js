@@ -69,6 +69,12 @@ gulp.task('libs', function() {
         .pipe(gulp.dest('dist/js'));   //放到dist文件夹下
 });
 
+//php
+gulp.task('php', function() {
+    return gulp.src('php/*.php')   //把所有的src里面的文件都使用babel编译一下，放到all.js文件里， 
+        .pipe(gulp.dest('dist/php'));   //放到dist文件夹下
+});
+
 gulp.task("watch",()=>{
     gulp.watch("index.html",["index"])
     gulp.watch("./css/*.css",["css","index"])
@@ -76,8 +82,9 @@ gulp.task("watch",()=>{
     gulp.watch("./libs/*.js",["libs","index"])
     gulp.watch("./sass/**/*.scss",["sass","html"])
     gulp.watch("./html/*.html",["html"])
+    gulp.watch("./php/*.php",["php","html"])
 })
 
-gulp.task("build",["scripts","index","Imagemin","css","libs","html","sass"])
+gulp.task("build",["scripts","index","Imagemin","css","libs","html","sass","php"])
 
 gulp.task('default', ['connect', 'watch']);
