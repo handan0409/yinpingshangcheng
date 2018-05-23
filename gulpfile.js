@@ -34,16 +34,16 @@ gulp.task('Imagemin', function () {
 });
 
 //index
-gulp.task("index",function(){   //把index放到dist文件夹内
-    return gulp.src("index.html")
-           .pipe(gulp.dest("dist"))
-           .pipe(connect.reload()) //浏览器自动刷新时，数据也更新到里面
-});
+// gulp.task("index",function(){   //把index放到dist文件夹内
+//     return gulp.src("index.html")
+//            .pipe(gulp.dest("dist"))
+//            .pipe(connect.reload()) //浏览器自动刷新时，数据也更新到里面
+// });
 
 //html
 gulp.task("html",function(){   //把index放到dist文件夹内
-    return gulp.src("./html/*.html")
-           .pipe(gulp.dest("dist/html"))
+    return gulp.src("./*.html")
+           .pipe(gulp.dest("dist"))
            .pipe(connect.reload()) //浏览器自动刷新时，数据也更新到里面
 });
 
@@ -75,16 +75,21 @@ gulp.task('php', function() {
         .pipe(gulp.dest('dist/php'));   //放到dist文件夹下
 });
 
+//data假数据
+gulp.task('data', function() {
+    return gulp.src('data/*.json')   //把所有的src里面的文件都使用babel编译一下，放到all.js文件里， 
+        .pipe(gulp.dest('dist/data'));   //放到dist文件夹下
+});
+
 gulp.task("watch",()=>{
-    gulp.watch("index.html",["index"])
-    gulp.watch("./css/*.css",["css","index"])
-    gulp.watch("./js/*.js",["scripts","index"])
-    gulp.watch("./libs/*.js",["libs","index"])
+    gulp.watch("./css/*.css",["css","html"])
+    gulp.watch("./js/*.js",["scripts","html"])
+    gulp.watch("./libs/*.js",["libs","html"])
     gulp.watch("./sass/**/*.scss",["sass","html"])
-    gulp.watch("./html/*.html",["html"])
+    gulp.watch("./*.html",["html"])
     gulp.watch("./php/*.php",["php","html"])
 })
 
-gulp.task("build",["scripts","index","Imagemin","css","libs","html","sass","php"])
+gulp.task("build",["scripts","Imagemin","css","libs","html","sass","php","data"])
 
 gulp.task('default', ['connect', 'watch']);

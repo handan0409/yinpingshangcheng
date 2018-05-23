@@ -1,3 +1,3 @@
-define(["jquery2",'register_validate'],function(jq,register){
+define(["jquery",'register_validate'],function(jq,register){
     register.init("http://localhost:/yinping/php/user.php");
 });

@@ -1,4 +1,4 @@
-define(["jquery2"],function(){
+define(["jquery"],function(){
     function Register(){
         
     }

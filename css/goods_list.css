@@ -1,0 +1,396 @@
+/* 重置头部样式 */
+.header_nav .all .class_cont{
+    display: none;
+}
+.activity{
+    display: none;
+}
+.header_nav{
+    width: 100%;
+    height: 35px;
+    box-shadow: 0px 3px 2px #dcdcdc;
+    z-index: 10;
+    position: relative;
+}
+/* 商品筛选页面 */
+#screen .pot{
+    height: 36px;
+    line-height: 36px;
+    color: #999999;
+}
+#screen .pot a{
+    color: #333333;
+}
+#screen .condition{
+    height: 40px;
+    line-height: 40px;
+    background: #f5f5f5;
+}
+#screen .condition p{
+    float: left;
+}
+#screen .condition .cont{
+    float: left;
+}
+#screen .condition .cont span{
+    display: inline-block;
+    height: 22px;
+    margin-top: 9px;
+    background: #fff;
+    border: 1px #dddddd solid;
+    line-height: 20px;
+    color: #ff6600;
+    padding: 0 3px;
+}
+#screen .condition .cont i{
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    margin-right: 5px;
+    background: url("../images/search_ele-1.0.0.png") no-repeat -2px -147px;
+    cursor: pointer;
+}
+#screen .condition .out{
+    width: 75px;
+    color: #ff6600;
+    text-align: center;
+}
+#screen .condition .delete{
+    color: #666666;
+    margin-left: 7px;
+}
+.condition_detail .sele_wrap{
+    padding: 0 10px;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px #e8e8e8 solid;
+}
+.condition_detail .sele_wrap.one{
+    height: auto;
+    padding: 10px;
+}
+.condition_detail .sele_wrap .sele_key{
+    width: 100px;
+    float: left;
+}
+.condition_detail .sele_wrap .sele_value{
+    float: left;
+    width: 960px;
+}
+.condition_detail .sele_wrap .sele_value ul{
+    width: 834px;
+}
+.condition_detail .sele_wrap .sele_value ul li{
+    float: left;
+    padding-right: 14px;
+    color: #3388dd;
+    cursor: pointer;
+}
+.condition_detail .sele_wrap .sele_value ul li input{
+    width: 37px;
+    border: 1px #e8e8e8 solid;
+    background: #ffffff;
+}
+.condition_detail .sele_wrap .sele_value ul li input[type="button"]{
+    width: 45px;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 5px;
+}
+.condition_detail .sele_wrap .sele_value ul li:hover{
+    color: #ff6600;
+}
+.condition_detail .sele_wrap .sele_value ul.table{
+    border-top: 1px #e8e8e8 solid;
+    border-left: 1px #e8e8e8 solid;
+}
+.condition_detail .sele_wrap .sele_value ul.table li{
+    width: 104px;
+    height: 42px;
+    position: relative;
+    text-align: center;
+    line-height: 42px;
+    color: #ff6600;
+    border-bottom: 1px #e8e8e8 solid;
+    border-right: 1px #e8e8e8 solid;
+}
+.condition_detail .sele_wrap .sele_value ul.table li img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+.condition_detail .sele_wrap .sele_value ul.table li:hover img{
+    opacity: 0;
+}
+
+/* 推荐热卖 */
+#heat{
+    height: 144px;
+    background: #f2f2f2;
+}
+#heat .title{
+    width: 43px;
+    height: 62px;
+    background: url("../images/sprite_cuxiao-1.0.0.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 32px;
+    float: left;
+}
+#heat ul{
+    float: left;
+    margin-top: 9px;
+}
+#heat ul li{
+    width: 267px;
+    height: 126px;
+    background: #ffffff;
+    margin-left: 50px;
+    padding: 10px;
+    float: left;
+}
+#heat ul li .img{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+#heat ul li .img img{
+    width: 100%;
+    height: 100%;
+}
+#heat ul li .infor{
+    float: left;
+    width: 155px;
+    height: 100px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#heat ul li .infor .goods_name{
+    color: #333333;
+    line-height: 16px;
+}
+#heat ul li .infor .money{
+    color: #ff6600;
+    margin: 10px 0;
+    font-size: 14px;
+}
+#heat ul li .infor .btn{
+    width: 62px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    border: 0;
+    background: #ff6600;
+    color: #ffffff;
+}
+
+/* 商品的列表主体部分 */
+#goods_main{
+    margin-top: 14px;
+}
+#goods_main .main_right{
+    width: 882px;
+    float: right;
+}
+#goods_main .main_right .top{
+    width: 100%;
+    height: 34px;
+    background: #f5f5f5;
+    border: 1px #e8e8e8 solid;
+}
+#goods_main .main_right .top ul{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+#goods_main .main_right .top ul li{
+    height: 21px;
+    line-height: 21px;
+    padding: 0 10px;
+    float: left;
+    color: #333333;
+    border: 1px #cccccc solid;
+    cursor: pointer;
+}
+#goods_main .main_right .top ul li:hover{
+    border: 1px #ff6600 solid;
+    color: #ff6600;
+}
+#goods_main .main_right .top ul li.active{
+    background: #ff6600;
+    color: #fff;
+    height: 21px;
+    border: 0;
+}
+#goods_main .main_right .top ul li.active i{
+    width: 9px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 4px;
+    background: url("../images/search_ele-1.0.0.png") no-repeat -2px -203px;
+}
+#goods_main .main_right .top .right{
+    float: right;
+    margin-top: 5px;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 8px;
+}
+#goods_main .main_right .top .right span{
+    float: right;
+    margin-right: 5px;
+}
+#goods_main .main_right .top .right span em{
+    color: #ff6600;
+}
+#goods_main .main_right .top .right a{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px #dddddd solid;
+    text-align: center;
+    line-height: 20px;
+    float: right;
+}
+#goods_main .main_right .top .right .next{
+    background: #fff;
+}
+#goods_main .main_right .top .right a img{
+    vertical-align: middle;
+    margin-top: -4px;
+}
+    /* 右边内容 */
+.main_right .conter{
+    width: 100%;
+}
+.main_right .conter li{
+    width: 220px;
+    height: 425px;
+    padding: 10px;
+    float: left;
+    margin-top: 3px;
+}
+.main_right .conter li:hover{
+    box-shadow: 0 0 4px #909090;
+}
+.main_right .conter li .img{
+    width: 100%;
+    margin-top: 20px;
+}
+.main_right .conter li .img p{
+    width: 100%;
+    height: 196px;
+    overflow: hidden;
+}
+.main_right .conter li .img p img{
+    width: 100%;
+    height: auto;
+}
+.main_right .conter li .img span{
+    display: block;
+    margin-top: 10px;
+}
+.main_right .conter li .img span i{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border: 1px #cccccc solid;
+}
+.main_right .conter li .img span i.active{
+    border: 1px #ff6600 solid;
+}
+.main_right .conter li .img span i img{
+    width: 100%;
+    height: 100%;
+}
+.main_right .conter li .money{
+    margin: 10px 0;
+    color: #ff6600;
+    font-size: 15px;
+}
+.main_right .conter li .goods_name{
+    color: #333333;
+    line-height: 16px;
+}
+.main_right .conter li .zan{
+    margin: 12px 0;
+    line-height: 14px;
+}
+.main_right .conter li .zan span{
+    margin-right: 5px;
+}
+.main_right .conter li .zan span:last-child{
+    color: #e95c5c;
+}
+.main_right .conter li .zan img{
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 4px;
+}
+.main_right .conter li .shoop_car{
+    width: 100%;
+}
+.main_right .conter li .shoop_car .shu{
+    float: left;
+    width: 42px;
+    height: 26px;
+}
+.main_right .conter li .shoop_car .shu p{
+    float: left;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border: 1px #dbdbdb solid;
+}
+.main_right .conter li .shoop_car .shu i{
+    width: 13px;
+    height: 13px;
+    border: 1px #dbdbdb solid;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.main_right .conter li .shoop_car .shu .jia{
+    background: url("../images/index_newadd-1.0.0.png") no-repeat -13px -2px;
+}
+.main_right .conter li .shoop_car .shu .jian{
+    background: url("../images/index_newadd-1.0.0.png") no-repeat -13px -24px;
+    margin-top: 2px;
+}
+.main_right .conter li .shoop_car button{
+    float: left;
+    width: 90px;
+    height: 27px;
+    border: 0;
+    background: #ff6600;
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.main_right .conter li .shoop_car .house{
+    float: right;
+    padding: 0 6px;
+    height: 27px;
+    line-height: 27px;
+    border: 1px #dbdbdb solid;
+    color: #454545;
+}
+.main_right .conter li .shoop_car .house i{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    background: url(../images/search_ele-1.0.0.png) no-repeat -1px -415px;
+}

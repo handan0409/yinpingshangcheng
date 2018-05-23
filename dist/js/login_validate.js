@@ -1,4 +1,4 @@
-define(['jquery2',"cookie2"],function(){
+define(['jquery',"cookie"],function(){
     function Login(){
         
     }
@@ -25,9 +25,9 @@ define(['jquery2',"cookie2"],function(){
                     _this.loading()
                     .then(function(res){
                         if(res){
-                            location.href="../index.html";
+                            location.href="index.html";
                             console.log(res.username);
-                            $.cookie("user",res.username);
+                            $.cookie("user",res.username,{path:"/"});
                         }else{
                             $(".error_zong").show();
                         }
