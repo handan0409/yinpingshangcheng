@@ -7,13 +7,12 @@ define([
     "index_car",
     "nav_2",
     'cookie',
-    "goods_list_data",
-    "count", //计算购买数量模块
     "addcar",
     "getcar", //渲染购物车数据
     'sumcar',
-    "removecar"
-],function(jq,nav,move,car,nav_2,cookie,data,count,addcar,getcar,sumcar,removecar){
+    "removecar",
+    "magnifier"
+],function(jq,nav,move,car,nav_2,cookie,addcar,getcar,sumcar,removecar,magnifier){
     //这是导航右边的的小轮播图
     var btn_top = ".header_nav .right_img .top_btn";
     var btn_bom = ".header_nav .right_img .bottom_btn";
@@ -41,22 +40,6 @@ define([
         $(this).children(".class_cont").hide();
     });
 
-    //ajax请求数据
-    data.init("data/goods_list.json");
-
-    //商品的大小图切换
-    $("#main_data").on("mouseover","li .img i",function(){
-        var index = $(this).index();
-        $(this)
-        .addClass("active")
-        .siblings().removeClass("active");
-        $(this).parents(".img").find("p img").removeClass("active");
-        $(this).parents(".img").find("p img").eq(index).addClass("active");
-    });
-
-    //计算购买商品的数量
-    count.init("#main_data",".shoop_car .shu .jia",".shoop_car .shu .jian");
-
     //加入购物车
     addcar.init("#main_data",'.shoop_car button');
 
@@ -71,6 +54,13 @@ define([
         console.log(1324);
         var goodsid = $(this).data("id");
         removecar.init(goodsid);
+    });
+
+    //放大镜
+    magnifier.init({
+        "small_ele":".infor_left .small_img",
+		"focus_ele":".infor_left .grayBox",
+		"big_ele":".infor_left .big_img"
     });
     
     

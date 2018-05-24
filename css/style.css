@@ -430,7 +430,7 @@
 #left_bar{
     position: fixed;
     left: 50%;
-    top: 100px;
+    top: 200px;
     margin-left: -586px;
     width: 36px;
     z-index: 12;

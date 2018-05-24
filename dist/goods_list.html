@@ -21,8 +21,8 @@
         <div class="container">
             <ul class="ul_left">
                 <li>您好！欢迎来到音平商城！</li>
-                <li class="login_1"><a href="html/login.html">请登录</a></li>
-                <li class="login_1"><a href="heml/register.html">免费注册</a></li>
+                <li class="login_1"><a href="login.html">请登录</a></li>
+                <li class="login_1"><a href="register.html">免费注册</a></li>
                 <li class="login_2">欢迎您！</li>
             </ul>
             <ul class="ul_right">
@@ -265,13 +265,13 @@
             </div>
             <!-- 导航-->
             <ul class="nav_box">
-                <li><a href="">网站首页</a></li>
-                <li><a href="">套装方案</a></li>
-                <li><a href="">活动专区</a></li>
-                <li><a href="">品牌专区</a></li>
-                <li><a href="">音平资讯</a></li>
-                <li><a href="">音平乐享</a></li>
-                <li><a href="">音师傅</a></li>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="goods_list.html">套装方案</a></li>
+                <li><a href="goods_list.html">活动专区</a></li>
+                <li><a href="goods_list.html">品牌专区</a></li>
+                <li><a href="goods_list.html">音平资讯</a></li>
+                <li><a href="goods_list.html">音平乐享</a></li>
+                <li><a href="goods_list.html">音师傅</a></li>
             </ul>
             <!-- 右边广告-->
             <div class="right_img">
@@ -525,11 +525,13 @@
             </div>
             <div class="conter">
                 <ul class="clear" id="main_data">
-<!--                     
+<!--                      
                     <li>
                         <a href="">
                             <div class="img">
                                 <p>
+                                    <img class="active" src="images/201307181829340416145.jpg" alt="">
+                                    <img src="images/201307181829340416145.jpg" alt="">
                                     <img src="images/201307181829340416145.jpg" alt="">
                                 </p>
                                 <span>
@@ -570,7 +572,7 @@
                             </div>
                         </div>
                     </li>
-                     -->
+                      -->
                 </ul>
             </div>
         </div>
@@ -712,7 +714,7 @@
             <li><a class="car">
                 <i></i>
                 购<br>物<br>车
-                <span>0</span>
+                <span id="shopCarNum">0</span>
             </a></li>
             <li><a class="zch" href=""></a></li>
             <li><a class="jy" href=""><img src="images/edit_index-1.0.0.png" alt=""/></a></li>
@@ -725,12 +727,12 @@
     <div class="car_right">
         <div class="title">
             <span><img src="images/quick_cart-1.0.0.png" alt=""/>购物车</span>
-            <i><img src="images/quick_dismiss-1.0.0.png" alt=""/></i>
+            <i id="carPopDelete"><img src="images/quick_dismiss-1.0.0.png" alt=""/></i>
         </div>
         <div class="car_goods">
             <div class="scroll">
-            <ul>
-                <li>
+            <ul id="carPop">
+                <!-- <li>
                     <a href="">
                         <div class="img"><img src="images/201405211005210839487.jpg" alt=""/></div>
                         <div class="infor">
@@ -739,49 +741,16 @@
                         </div>
                     </a>
                     <i class="delete"><img src="images/delete.png" alt=""/></i>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="img"><img src="images/201405211005210839487.jpg" alt=""/></div>
-                        <div class="infor">
-                            <p class="txt">TC-TH 会议VHF无线电容麦克风（A组） 颜色(红色)</p>
-                            <p class="jiage"><span>￥205.00</span><i>x1</i></p>
-                        </div>
-                    </a>
-                    <i class="delete"><img src="images/delete.png" alt=""/></i>
-                </li>
+                </li> -->
+                
             </ul>
-            <ul>
-                <!--<li class="ul_top">
-
-                </li>-->
-                <li>
-                    <a href="">
-                        <div class="img"><img src="images/201405211005210839487.jpg" alt=""/></div>
-                        <div class="infor">
-                            <p class="txt">TC-TH 会议VHF无线电容麦克风（A组） 颜色(红色)</p>
-                            <p class="jiage"><span>￥205.00</span><i>x1</i></p>
-                        </div>
-                    </a>
-                    <i class="delete"><img src="images/delete.png" alt=""/></i>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="img"><img src="images/201405211005210839487.jpg" alt=""/></div>
-                        <div class="infor">
-                            <p class="txt">TC-TH 会议VHF无线电容麦克风（A组） 颜色(红色)</p>
-                            <p class="jiage"><span>￥205.00</span><i>x1</i></p>
-                        </div>
-                    </a>
-                    <i class="delete"><img src="images/delete.png" alt=""/></i>
-                </li>
-            </ul>
+            
             </div>
         </div>
         <div class="go_settle">
             <p class="clear">
-                <span class="num"><i>3</i>件商品</span>
-                <span class="sum_money">共计<i>￥3360.00</i></span>
+                <span class="num"><i id="type_sum">3</i>件商品</span>
+                <span class="sum_money">共计<i>￥<em id="sum_monty">3360.00</em></i></span>
             </p>
             <a href="">去购物车结算</a>
         </div>

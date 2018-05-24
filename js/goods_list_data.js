@@ -26,11 +26,20 @@ define([
             var html='';
             this.json.data.forEach(function(item){
                 html+=`<li>
-                            <a href="">
+                            
                                 <div class="img">
-                                    <p>
-                                        <img src="${item.img}" alt="">
+                                    <a href="">
+                                    <p>`;
+                                    item.big_img.forEach(function(item_Bigimg,index){
+                                        if(index==0){
+                                            html+=`<img class="active" src="${item_Bigimg.url}" alt="">`;
+                                        }else{
+                                            html+=`<img src="${item_Bigimg.url}" alt="">`;
+                                        }
+                                    });
+                            html+= `
                                     </p>
+                                    </a>
                                     <span>`;
                                     item.small_img.forEach(function(item_img,index){
                                         if(index==0){
@@ -47,7 +56,7 @@ define([
                                     </span>
                                 </div>
                                 <div class="money">￥${item.monty}</div>
-                                <div class="goods_name clamp2">${item.title}</div>
+                                <div class="goods_name clamp2"><a href="">${item.title}</a></div>
                                 <div class="zan">
                                     <span>
                                         <img src="images/liuyan.png" alt="">
@@ -58,14 +67,14 @@ define([
                                         <em>${item.zan}</em>
                                     </span>
                                 </div>
-                            </a>
+                            
                             <div class="shoop_car clear">
                                 <div class="shu">
                                     <p>1</p>
                                     <i class="jia"></i>
                                     <i class="jian"></i>
                                 </div>
-                                <button data-id="${item.data}">加入购物车</button>
+                                <button data-id="${item.id}">加入购物车</button>
                                 <div class="house">
                                     <i></i>
                                     <span>收藏</span>

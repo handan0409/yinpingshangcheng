@@ -11,6 +11,13 @@ require.config({
         "login_validate":"js/login_validate",
         "cookie":"js/jquery.cookie",
         "register_validate":"js/register_validate",
-        "goods_list_data":"js/goods_list_data"
+        "goods_list_data":"js/goods_list_data",
+        "count":"js/count",
+        "addcar":"js/addCar",
+        "sumcar":"js/sumCar",
+        "getcar":"js/getCar",
+        "removecar":"js/removeCar",
+        "search_data":"js/search_data",
+        "magnifier":"js/magnifier"
     }
 });
