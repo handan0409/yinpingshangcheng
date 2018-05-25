@@ -11,8 +11,10 @@ define([
     "getcar", //渲染购物车数据
     'sumcar',
     "removecar",
-    "magnifier"
-],function(jq,nav,move,car,nav_2,cookie,addcar,getcar,sumcar,removecar,magnifier){
+    "magnifier",
+    "magnifier_narrow",
+    "count",
+],function(jq,nav,move,car,nav_2,cookie,addcar,getcar,sumcar,removecar,magnifier,MagnifierNarrow,count){
     //这是导航右边的的小轮播图
     var btn_top = ".header_nav .right_img .top_btn";
     var btn_bom = ".header_nav .right_img .bottom_btn";
@@ -41,7 +43,7 @@ define([
     });
 
     //加入购物车
-    addcar.init("#main_data",'.shoop_car button');
+    addcar.init(".infor_right .dev_left",'.button .btn_shop');
 
     //渲染购物车数据
     getcar.init("#carPop");
@@ -62,6 +64,16 @@ define([
 		"focus_ele":".infor_left .grayBox",
 		"big_ele":".infor_left .big_img"
     });
-    
-    
+    //放大镜的缩略图
+    MagnifierNarrow.init(".narrow_img li",".goods_detail_img .small_img img",".goods_detail_img .big_img img");
+
+    //选择规格
+    $(".guige .gg_btn p").on("click",function(){
+        $(this).addClass("active")
+        .siblings().removeClass("active");
+    });
+
+    //计算购买商品的数量
+    count.init(".infor_right .dev_left",".num_shu .jia",".num_shu .jian");
+
 }); 

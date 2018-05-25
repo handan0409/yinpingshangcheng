@@ -18,6 +18,7 @@ require.config({
         "getcar":"js/getCar",
         "removecar":"js/removeCar",
         "search_data":"js/search_data",
-        "magnifier":"js/magnifier"
+        "magnifier":"js/magnifier",
+        "magnifier_narrow":"js/magnifier_narrow"
     }
 });

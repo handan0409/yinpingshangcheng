@@ -68,7 +68,6 @@ define([
 
     //删除购物车
     $("#carPop").on("click",".delete",function(){
-        console.log(1324);
         var goodsid = $(this).data("id");
         removecar.init(goodsid);
     });

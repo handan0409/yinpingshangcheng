@@ -16,11 +16,11 @@ define(['jquery','cookie'],function(){
         },
         //取cookie数据,并比对，生成一个新的对象数组
         getCookie(){
+            this.carGoods = [];
             var shopCarString = $.cookie("shopcar");
-            if(!shopCarString)return;  //防止报错
+            if(!shopCarString)return this.render();;  //防止报错
             // console.log(this.json.data);
             var shopCarArray = JSON.parse(shopCarString);
-            this.carGoods = [];
             shopCarArray.forEach(function(item){
                 this.json.data.forEach(function(goodsAll){
                     if(item.id==goodsAll.id){

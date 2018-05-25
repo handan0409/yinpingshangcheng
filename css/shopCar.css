@@ -1,0 +1,50 @@
+.shopcar .carSum{
+    color: #e4393c;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.shopcar .carSum span{
+    margin-left: 5px;
+}
+.car_title{
+    border: 1px #eaeaea solid;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+}
+.car_title label{
+    color: #000;
+}
+.checkbox{
+    margin-left: 21px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 12px;
+}
+.car_title .span1{
+    margin-left: 40px;
+}
+.car_title .span2{
+    margin-left: 310px;
+}
+.car_title .span3{
+    margin-left: 83px;
+}
+.car_title .span4{
+    margin-left: 82px;
+}
+.car_title .span5{
+    margin-left: 47px;
+}
+
+.carCont{
+    margin-top: 10px;
+    border-top: 1px #eaeaea solid;
+    border-left: 1px #eaeaea solid;
+}
+.carCont li{
+    width: 100%;
+    height: 100%;
+    /* border:  */
+}

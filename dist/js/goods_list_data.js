@@ -28,7 +28,7 @@ define([
                 html+=`<li>
                             
                                 <div class="img">
-                                    <a href="">
+                                    <a href="goods_detail.html">
                                     <p>`;
                                     item.big_img.forEach(function(item_Bigimg,index){
                                         if(index==0){
@@ -56,7 +56,7 @@ define([
                                     </span>
                                 </div>
                                 <div class="money">￥${item.monty}</div>
-                                <div class="goods_name clamp2"><a href="">${item.title}</a></div>
+                                <div class="goods_name clamp2"><a href="goods_detail.html">${item.title}</a></div>
                                 <div class="zan">
                                     <span>
                                         <img src="images/liuyan.png" alt="">
